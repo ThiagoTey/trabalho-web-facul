@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Remove a margin e coloca a fonte na página toda */
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header com os links */
+header {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  background-color: #2596be;
+  padding: 22px 0px;
+}
+
+/* Remove css padrao dos links e aplica meu proprio css*/
+header a {
+  all: unset;
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+header > a:hover{
+    font-weight: bold;
+}
+
+/* Conteiner do conteudo da página da pagina */
+main {
+    width: 1280px;
+    margin: auto;
+}
+
+/* Container do texto e imagem */
+.content{
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+/* css da imagem */
+.content > img{
+    flex: 1;
+    width: fit-content;
+    max-height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text{
+    flex: 1;
+}
+
+.text p{
+ font-size: 20px;
+}
+
+.title {
+    margin: auto;
+    margin-top: 64px;
+    width: fit-content;
+}
+
+/* css de contato */
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* css do portfolio */
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio img {
+    border-radius: 8px;
+    max-height: 500px;
+    transition: all 0.2s;
+}
+
+.portfolio img:hover {
+   transform: scale(1.02);
+}
